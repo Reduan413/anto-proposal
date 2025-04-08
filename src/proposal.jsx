@@ -68,6 +68,9 @@ export default function Proposal() {
             <h3 className="title">Project Proposal</h3>
           </div>
           <p className="date">25 March 2025</p>
+          <p className="page-counter">
+            Proposal | <strong> Page 1</strong>
+          </p>
         </div>
 
         {/* Page 2 */}
@@ -78,6 +81,9 @@ export default function Proposal() {
             <li>Project Investment - 09</li>
             <li>About Us - 12</li>
           </ul>
+          <p className="page-counter">
+            Proposal | <strong> Page 1</strong>
+          </p>
         </div>
 
         {/* Page 4 */}
@@ -126,6 +132,9 @@ export default function Proposal() {
               ownership, tenancy...
             </li>
           </ul>
+          <p className="page-counter">
+            Proposal | <strong> Page 1</strong>
+          </p>
         </div>
 
         {/* Page 9 - Project Investment */}
@@ -159,6 +168,9 @@ export default function Proposal() {
           </table>
           <p className="note">
             *includes one month of free maintenance service.
+          </p>
+          <p className="page-counter">
+            Proposal | <strong> Page 1</strong>
           </p>
         </div>
       </div>

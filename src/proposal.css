@@ -20,6 +20,19 @@
   position: relative;
 }
 
+.page-counter {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: #85dffe;
+  font-weight: 500;
+  font-family: "Rajdhani", sans-serif;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 .first-page {
   background-image: url("/assets/first_page_bg.png") !important;
   background-size: 100% 100%;
