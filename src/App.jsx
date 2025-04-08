@@ -1,14 +1,13 @@
-
-import './App.css'
-import Proposal from './proposal'
+import "./App.css";
+import Proposal from "./proposal";
 
 function App() {
-
   return (
     <>
-     <Proposal/>
+      <Proposal/>
+      {/* <GenerateProposalPage4 /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

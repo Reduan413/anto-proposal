@@ -1,31 +1,30 @@
 import { useRef } from "react";
-import jsPDF from "jspdf";
-import html2canvas from "html2canvas";
+import { generateProposalPage4 } from "./NewPage";
 
 export default function Proposal() {
   const pdfRef = useRef();
 
-  const generatePDF = async () => {
-    try {
-      const canvas = await html2canvas(pdfRef.current, {
-        scale: 2, // Increase resolution
-        useCORS: true, // Handle cross-origin images if any
-      });
-      const imgData = canvas.toDataURL("image/png");
-      const doc = new jsPDF("p", "pt", "a4");
-      const imgWidth = 595; // A4 width in points
-      const imgHeight = (canvas.height * imgWidth) / canvas.width;
-      doc.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
-      doc.save("Uttara-Sector-7-Proposal.pdf");
-    } catch (error) {
-      console.error("PDF generation failed:", error);
-    }
-  };
+  // const generatePDF = async () => {
+  //   try {
+  //     const canvas = await html2canvas(pdfRef.current, {
+  //       scale: 2, // Increase resolution
+  //       useCORS: true, // Handle cross-origin images if any
+  //     });
+  //     const imgData = canvas.toDataURL("image/png");
+  //     const doc = new jsPDF("p", "pt", "a4");
+  //     const imgWidth = 595; // A4 width in points
+  //     const imgHeight = (canvas.height * imgWidth) / canvas.width;
+  //     doc.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
+  //     doc.save("Uttara-Sector-7-Proposal.pdf");
+  //   } catch (error) {
+  //     console.error("PDF generation failed:", error);
+  //   }
+  // };
 
   return (
     <div>
       <button
-        onClick={generatePDF}
+        onClick={() => generateProposalPage4()}
         style={{
           margin: "20px",
           padding: "10px 20px",
@@ -38,10 +37,15 @@ export default function Proposal() {
       >
         Download PDF
       </button>
-      <div ref={pdfRef} style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
+      <div
+        ref={pdfRef}
+        style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}
+      >
         <div style={pageStyle}>
           <h1 style={headerStyle}>Uttara Sector 7 Welfare Society</h1>
-          <h2 style={subHeaderStyle}>Custom Record Keeping System Development</h2>
+          <h2 style={subHeaderStyle}>
+            Custom Record Keeping System Development
+          </h2>
           <h3 style={titleStyle}>Project Proposal</h3>
         </div>
         {/* Add other pages as needed */}
