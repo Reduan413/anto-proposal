@@ -71,7 +71,7 @@ export default function Proposal() {
         </div>
 
         {/* Page 2 */}
-        <div className="page">
+        <div className="page page-2">
           <h2 className="section-title">Table of Contents</h2>
           <ul className="list">
             <li>Proposal - 04</li>
