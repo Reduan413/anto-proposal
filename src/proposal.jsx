@@ -11,13 +11,30 @@ export default function Proposal() {
       const canvas = await html2canvas(pdfRef.current, {
         scale: 2,
         useCORS: true,
+        backgroundColor: null,
       });
+
       const imgData = canvas.toDataURL("image/png");
-      const doc = new jsPDF("p", "pt", "a4");
-      const imgWidth = 595;
-      const imgHeight = (canvas.height * imgWidth) / canvas.width;
-      doc.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
-      doc.save("Uttara-Sector-7-Proposal.pdf");
+      const pdf = new jsPDF("p", "pt", "a4");
+
+      const imgWidth = 595; // A4 width in pt
+      const pageHeight = 842; // A4 height in pt
+      const imgHeight = (canvas.height * imgWidth) / canvas.width; // Adjusted height
+
+      let heightLeft = imgHeight;
+      let position = 0;
+
+      pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
+      heightLeft -= pageHeight;
+
+      while (heightLeft > 0) {
+        position -= pageHeight;
+        pdf.addPage();
+        pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
+        heightLeft -= pageHeight;
+      }
+
+      pdf.save("Uttara-Sector-7-Proposal.pdf");
     } catch (error) {
       console.error("PDF generation failed:", error);
     }
