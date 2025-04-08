@@ -2,6 +2,7 @@ import { useRef } from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import "./proposal.css"; // Import the external CSS
+import ExtraordinaryImg from "../public/assets/extraordinary_img.png";
 
 export default function Proposal() {
   const pdfRef = useRef();
@@ -71,13 +72,30 @@ export default function Proposal() {
         </div>
 
         {/* Page 2 */}
-        <div className="page page-2">
-          <h2 className="section-title">Table of Contents</h2>
-          <ul className="list">
-            <li>Proposal - 04</li>
-            <li>Project Investment - 09</li>
-            <li>About Us - 12</li>
-          </ul>
+        <div className="page contents_table">
+          <h2 className="title">Table of Contents</h2>
+          <div className="contents_details">
+            <div className="contents_page">
+              <p className="page_title">Proposal</p>
+              <p className="page_no">04</p>
+            </div>
+            <div className="contents_page">
+              <p className="page_title">Project Investment</p>
+              <p className="page_no">09</p>
+            </div>
+            <div className="contents_page">
+              <p className="page_title">About Us</p>
+              <p className="page_no">12</p>
+            </div>
+          </div>
+        </div>
+        {/* Page 3 */}
+        <div className="page extraordinary">
+          <h3 className="title1">Ready to build something</h3>
+          <h2 className="title2">Extraordinary?</h2>
+          <img src={ExtraordinaryImg}  alt="" className="extraordinary_img"/>
+          <h2 className="title3">Antopolis is here to help you</h2>
+          <h2 className="title4">Make your dream app a reality</h2>
         </div>
 
         {/* Page 4 */}
