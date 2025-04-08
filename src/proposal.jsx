@@ -69,9 +69,6 @@ export default function Proposal() {
             <h3 className="title">Project Proposal</h3>
           </div>
           <p className="date">25 March 2025</p>
-          <p className="page-counter">
-            Proposal | <strong> Page 1</strong>
-          </p>
         </div>
 
         {/* Page 2 */}
@@ -96,19 +93,9 @@ export default function Proposal() {
         <div className="page extraordinary">
           <h3 className="title1">Ready to build something</h3>
           <h2 className="title2">Extraordinary?</h2>
-          <img src={ExtraordinaryImg}  alt="" className="extraordinary_img"/>
+          <img src={ExtraordinaryImg} alt="" className="extraordinary_img" />
           <h2 className="title3">Antopolis is here to help you</h2>
           <h2 className="title4">Make your dream app a reality</h2>
-        <div className="page page-2">
-          <h2 className="section-title">Table of Contents</h2>
-          <ul className="list">
-            <li>Proposal - 04</li>
-            <li>Project Investment - 09</li>
-            <li>About Us - 12</li>
-          </ul>
-          <p className="page-counter">
-            Proposal | <strong> Page 1</strong>
-          </p>
         </div>
 
         {/* Page 4 */}
