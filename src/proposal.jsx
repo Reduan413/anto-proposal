@@ -1,31 +1,32 @@
 import { useRef } from "react";
-import { generateProposalPage4 } from "./NewPage";
+import jsPDF from "jspdf";
+import html2canvas from "html2canvas";
 import "./proposal.css"; // Import the external CSS
 
 export default function Proposal() {
   const pdfRef = useRef();
 
-  // const generatePDF = async () => {
-  //   try {
-  //     const canvas = await html2canvas(pdfRef.current, {
-  //       scale: 2,
-  //       useCORS: true,
-  //     });
-  //     const imgData = canvas.toDataURL("image/png");
-  //     const doc = new jsPDF("p", "pt", "a4");
-  //     const imgWidth = 595;
-  //     const imgHeight = (canvas.height * imgWidth) / canvas.width;
-  //     doc.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
-  //     doc.save("Uttara-Sector-7-Proposal.pdf");
-  //   } catch (error) {
-  //     console.error("PDF generation failed:", error);
-  //   }
-  // };
+  const generatePDF = async () => {
+    try {
+      const canvas = await html2canvas(pdfRef.current, {
+        scale: 2,
+        useCORS: true,
+      });
+      const imgData = canvas.toDataURL("image/png");
+      const doc = new jsPDF("p", "pt", "a4");
+      const imgWidth = 595;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      doc.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
+      doc.save("Uttara-Sector-7-Proposal.pdf");
+    } catch (error) {
+      console.error("PDF generation failed:", error);
+    }
+  };
 
   return (
     <div>
       <button
-        onClick={() => generateProposalPage4()}
+        onClick={generatePDF}
         style={{
           margin: "20px",
           padding: "10px 20px",
@@ -147,4 +148,3 @@ export default function Proposal() {
     </div>
   );
 }
-
