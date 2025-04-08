@@ -3,6 +3,8 @@ import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import "./proposal.css"; // Import the external CSS
 import ExtraordinaryImg from "../public/assets/extraordinary_img.png";
+import EndPageImg from "../public/assets/end_page_img.png";
+import { TbWorld } from "react-icons/tb";
 
 export default function Proposal() {
   const pdfRef = useRef();
@@ -184,6 +186,23 @@ export default function Proposal() {
           <p className="page-counter">
             Proposal | <strong> Page 1</strong>
           </p>
+        </div>
+        {/* End Page  */}
+        <div className="page end_page">
+          <h3 className="title1">
+            Let's get the ball rolling and build something outstanding!
+          </h3>
+          <p className="title2">
+            We look forward to empowering your business goals and becoming a
+            partner to your success.
+          </p>
+          <img src={EndPageImg} alt="" className="end_page_img" />
+          <div className="contact_details">
+            <h2 className="contact_title">Please reach us at:</h2>
+            <div>
+              <p><TbWorld/></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
