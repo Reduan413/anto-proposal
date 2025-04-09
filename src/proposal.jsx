@@ -2,11 +2,11 @@ import { useRef } from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import "./proposal.css"; // Import the external CSS
-import ExtraordinaryImg from "../public/assets/extraordinary_img.png";
-import EndPageImg from "../public/assets/end_page_img.png";
-import { TbWorld } from "react-icons/tb";
-import { MdEmail, MdPhoneInTalk } from "react-icons/md";
-import OurService from "./pages/Service/OurService";
+import EndPage from "./pages/EndPage/EndPage";
+import FirstPage from "./pages/FirstPage/FirstPage";
+import ContentsTable from "./pages/ContentsTable/ContentsTable";
+import Extraordinary from "./pages/Extraordinary/Extraordinary";
+import SuccessStories from "./pages/SuccessStories/SuccessStories";
 import DedicatedMessage from "./pages/DedicatedMessage/DedicatedMessage";
 
 export default function Proposal() {
@@ -65,43 +65,11 @@ export default function Proposal() {
 
       <div ref={pdfRef} className="proposal-wrapper">
         {/* Page 1 */}
-        <div className="page first-page">
-          <div className="proposal_to">
-            <h1 className="header">Uttara Sector 7 Welfare Society</h1>
-            <h2 className="sub-header">
-              Custom Record Keeping System Development
-            </h2>
-            <h3 className="title">Project Proposal</h3>
-          </div>
-          <p className="date">25 March 2025</p>
-        </div>
-
+        <FirstPage />
         {/* Page 2 */}
-        <div className="page contents_table">
-          <h2 className="title">Table of Contents</h2>
-          <div className="contents_details">
-            <div className="contents_page">
-              <p className="page_title">Proposal</p>
-              <p className="page_no">04</p>
-            </div>
-            <div className="contents_page">
-              <p className="page_title">Project Investment</p>
-              <p className="page_no">09</p>
-            </div>
-            <div className="contents_page">
-              <p className="page_title">About Us</p>
-              <p className="page_no">12</p>
-            </div>
-          </div>
-        </div>
+        <ContentsTable />
         {/* Page 3 */}
-        <div className="page extraordinary">
-          <h3 className="title1">Ready to build something</h3>
-          <h2 className="title2">Extraordinary?</h2>
-          <img src={ExtraordinaryImg} alt="" className="extraordinary_img" />
-          <h2 className="title3">Antopolis is here to help you</h2>
-          <h2 className="title4">Make your dream app a reality</h2>
-        </div>
+        <Extraordinary/>
 
         {/* Page 4 */}
         <div className="page">
@@ -190,33 +158,10 @@ export default function Proposal() {
             Proposal | <strong> Page 1</strong>
           </p>
         </div>
+        {/* Success Stories Page  */}
+        <SuccessStories />
         {/* End Page  */}
-        <div className="page end_page">
-          <h3 className="title1">
-            Let's get the ball rolling and build something outstanding!
-          </h3>
-          <p className="title2">
-            We look forward to empowering your business goals and becoming a
-            partner to your success.
-          </p>
-          <img src={EndPageImg} alt="" className="end_page_img" />
-          <div className="contact_details">
-            <h2 className="contact_title">Please reach us at:</h2>
-            <div>
-              <p className="detail">
-                <TbWorld /> theantopolis.com
-              </p>
-              <p className="detail">
-                <MdEmail /> info@theantopolis.com
-              </p>
-              <p className="detail">
-                <MdPhoneInTalk /> +880–1322–447011
-              </p>
-            </div>
-          </div>
-        </div>
-        <DedicatedMessage />
-        <OurService />
+        <EndPage />
       </div>
     </div>
   );
