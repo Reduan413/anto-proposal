@@ -70,7 +70,7 @@ export default function Investment() {
         <tbody className="investment-table-body">
           {data.map((item, index) => (
             <tr key={index}>
-              <td>{item.Item}</td>
+              <td className="item">{item.Item}</td>
               <td>{item.Purpose}</td>
               <td>{item.Specification}</td>
             </tr>
