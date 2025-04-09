@@ -2,11 +2,12 @@ import React from "react";
 
 import "./pi.css";
 import PageCounter from "../../components/PageCounter";
+import PageTopTitle from "../../components/PageTopTitle";
 export default function ProjectInvestment() {
   return (
-    <div className="page">
+    <div className="page project_investment">
+      <PageTopTitle title={"PROJECT  PROPOSAL"} />
       <div className="project-container">
-        <div className="header-text">PROJECT PROPOSAL</div>
         <h1 className="main-title">PROJECT INVESTMENT</h1>
 
         <table className="table">
@@ -60,7 +61,7 @@ export default function ProjectInvestment() {
           *Includes one month of free maintenance service.
         </div>
 
-        <h2 className="maintenance-title">MAINTENANCE PACKAGES</h2>
+        <h2 className="main-title">MAINTENANCE PACKAGES</h2>
 
         <table className="table">
           <thead className="maintenance-table-head">

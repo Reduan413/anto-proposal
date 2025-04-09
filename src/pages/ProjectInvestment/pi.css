@@ -5,11 +5,13 @@
   letter-spacing: 1px;
 }
 
-.main-title {
+.project_investment .main-title {
   text-align: center;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: #FFFFFF;
+  margin-top: 24px;
 }
 
 .table {
@@ -31,8 +33,9 @@
 
 .table-cell {
   padding: 5px 10px;
-  font-size: 13px;
+  font-size: 14px;
   color: white;
+  text-align: start;
 }
 
 .maintenance-table-head th {
@@ -89,6 +92,8 @@
 .benefits-title {
   color: white;
   margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .benefits-list {
@@ -99,7 +104,7 @@
 .benefits-list li {
   color: #85dffe;
   display: flex;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   align-items: flex-start;
 }
@@ -113,8 +118,9 @@
 .validity {
   color: #85dffe;
   text-align: center;
-  margin: 60px 0 20px;
+  margin: 40px 0 20px;
   font-weight: 700;
+  font-size: 14px;
 }
 
 .footer {

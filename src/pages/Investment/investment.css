@@ -17,18 +17,21 @@
   justify-content: space-between;
   width: 100%;
   padding: 20px;
+  align-items: start;
 }
-
 .investment-page-header h2 {
-  font-size: 2rem;
+  font-size: 36px;
   font-weight: 700;
+  color: #ffffff;
+  line-height: normal;
 }
 
 .investment-page-header p {
-  font-size: 13px;
+  font-size: 12px;
   line-height: normal;
   font-weight: 400;
   color: #85dffe;
+  line-height: normal;
 }
 
 .investment-table-body {
@@ -72,6 +75,7 @@ tr .item {
 .investment-page-footer h2 {
   font-size: 20px;
   font-weight: 700;
+  color: #ffffff;
 }
 
 .package-grid {
