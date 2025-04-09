@@ -2,9 +2,18 @@
     margin: 0;
     text-align: start;
   }
+  .service-page {
+    padding: 40px 60px;
+}
   
+  .service-page  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
   .service-list {
-    margin-top: 2rem;
+    margin-top: 1.25rem;
   }
   .service-item {
     display: flex;
@@ -18,26 +27,25 @@
   .service-item h2 {
     margin: 0;
     padding: 0;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     color: #85dffe;
-  }
+}
   
   .service-item figure {
     margin: 0;
     padding: 0;
-    width: 200px;
-    height: 200px;
   }
   .service-item img {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     background: #000 !important;
-  }
+}
   .service-item p {
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 10px;
     color: #ffffff;
-  }
+    font-weight: 400;
+}
   

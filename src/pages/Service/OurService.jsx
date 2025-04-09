@@ -1,4 +1,5 @@
 import PageCounter from "../../components/PageCounter";
+import PageTopTitle from "../../components/PageTopTitle";
 import "./service.css";
 
 const serviceData = [
@@ -42,6 +43,7 @@ HR demands, or meet the demands of project-`,
 export default function OurService() {
   return (
     <div className="page service-page">
+      <PageTopTitle title={"PROJECT PROPOSAL"} />
       <h1>Our Service</h1>
 
       <div className="service-list">
@@ -61,7 +63,7 @@ export default function OurService() {
           </div>
         ))}
       </div>
-      <PageCounter page="ABOUT US" number="Page 2" />
+      <PageCounter page="ABOUT US" number="2" />
     </div>
   );
 }

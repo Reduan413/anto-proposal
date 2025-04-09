@@ -5,7 +5,7 @@
   width: 595px;
   box-sizing: border-box;
   font-family: "Rajdhani", sans-serif;
-  background-image: url("/assets/success _stories_img.png");
+  background-image: url("/assets/success_stories_img.png");
   background-size: 100% 100%;
   left: 0;
   background-position: center;
@@ -17,4 +17,39 @@
 }
 .success_stories * {
   margin: 0;
+}
+.experience_detail .counter {
+  font-size: 48px;
+  color: #85dffe;
+  line-height: normal;
+  font-weight: 700;
+}
+.experience_detail .counter_title {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: normal;
+}
+.experiences_flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+.success_stories .detail {
+  font-size: 16px;
+  color: #85dffe;
+  font-weight: 400;
+  width: 210px;
+  margin: 60px auto 40px auto;
+}
+.success_stories a {
+  background-color: #3ff0f8;
+  padding: 12px 24px;
+  border-radius: 7px;
+  font-size: 16px;
+  color: #002653;
+  font-weight: 700;
+  text-decoration: underline;
 }

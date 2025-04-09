@@ -20,17 +20,24 @@
   position: relative;
 }
 
-.page-counter {
+.page-top-title {
   position: absolute;
-  bottom: 16px;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 12px;
+  font-size: 10px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.page-counter {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
   color: #85dffe;
-  font-weight: 500;
-  font-family: "Rajdhani", sans-serif;
-  padding: 5px 10px;
-  border-radius: 5px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
