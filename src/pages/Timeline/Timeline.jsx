@@ -1,5 +1,6 @@
 import React from "react";
 import "./timeline.css";
+import PageCounter from "../../components/PageCounter";
 
 export default function Timeline() {
   return (
@@ -35,6 +36,7 @@ export default function Timeline() {
           <div className="timeline-days total">30 Working Days</div>
         </div>
       </section>
+      <PageCounter page={"Proposal"} number={5} />
     </div>
   );
 }
