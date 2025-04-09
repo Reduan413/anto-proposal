@@ -8,6 +8,7 @@ import ContentsTable from "./pages/ContentsTable/ContentsTable";
 import Extraordinary from "./pages/Extraordinary/Extraordinary";
 import SuccessStories from "./pages/SuccessStories/SuccessStories";
 import DedicatedMessage from "./pages/DedicatedMessage/DedicatedMessage";
+import OurService from "./pages/Service/OurService";
 
 export default function Proposal() {
   const pdfRef = useRef();
@@ -69,7 +70,7 @@ export default function Proposal() {
         {/* Page 2 */}
         <ContentsTable />
         {/* Page 3 */}
-        <Extraordinary/>
+        <Extraordinary />
 
         {/* Page 4 */}
         <div className="page">
@@ -158,9 +159,8 @@ export default function Proposal() {
             Proposal | <strong> Page 1</strong>
           </p>
         </div>
-        {/* Success Stories Page  */}
+        <OurService />
         <SuccessStories />
-        {/* End Page  */}
         <EndPage />
       </div>
     </div>
