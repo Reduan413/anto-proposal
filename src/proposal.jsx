@@ -9,6 +9,7 @@ import Extraordinary from "./pages/Extraordinary/Extraordinary";
 import SuccessStories from "./pages/SuccessStories/SuccessStories";
 import OurService from "./pages/Service/OurService";
 import DedicatedMessage from "./pages/DedicatedMessage/DedicatedMessage";
+import Investment from "./pages/Investment/Investment";
 
 export default function Proposal() {
   const pdfRef = useRef();
@@ -122,43 +123,7 @@ export default function Proposal() {
             Proposal | <strong> Page 1</strong>
           </p>
         </div>
-
-        {/* Page 9 - Project Investment */}
-        <div className="page">
-          <h2 className="section-title">Project Investment</h2>
-          <table className="table">
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th>Cost</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Custom Record-Keeping Application Development</td>
-                <td>4,00,000</td>
-              </tr>
-              <tr>
-                <td>80% Referral Discount (Akibur Rahman)</td>
-                <td>3,20,000</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Total</strong>
-                </td>
-                <td>
-                  <strong>80,000*</strong>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <p className="note">
-            *includes one month of free maintenance service.
-          </p>
-          <p className="page-counter">
-            Proposal | <strong> Page 1</strong>
-          </p>
-        </div>
+        <Investment />
         <DedicatedMessage />
         <OurService />
         <SuccessStories />
