@@ -35,6 +35,13 @@
   color: white;
 }
 
+.maintenance-table-head th {
+  border-right: 1px solid rgba(133, 223, 254, 0.3);
+}
+.maintenance-table-head th:last-child {
+  border-right: none;
+}
+
 .discount-row {
   color: #3ff0f8;
   font-weight: 600;
@@ -44,6 +51,12 @@
   border-right: 1px solid rgba(133, 223, 254, 0.3);
 }
 .invest-table td:last-child {
+  border-right: none;
+}
+.maintenance-table td {
+  border-right: 1px solid rgba(133, 223, 254, 0.3);
+}
+.maintenance-table td:last-child {
   border-right: none;
 }
 

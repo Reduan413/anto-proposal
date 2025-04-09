@@ -63,17 +63,23 @@ export default function ProjectInvestment() {
         <h2 className="maintenance-title">MAINTENANCE PACKAGES</h2>
 
         <table className="table">
-          <thead>
+          <thead className="maintenance-table-head">
             <tr className="table-header">
               <th
                 className="table-cell"
-                style={{ textAlign: "left", width: "33%" }}
+                style={{
+                  textAlign: "left",
+                  width: "33%",
+                }}
               >
                 Package
               </th>
               <th
                 className="table-cell"
-                style={{ textAlign: "center", width: "33%" }}
+                style={{
+                  textAlign: "center",
+                  width: "33%",
+                }}
               >
                 Amount
               </th>
@@ -85,7 +91,7 @@ export default function ProjectInvestment() {
               </th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="maintenance-table">
             <tr className="table-row">
               <td className="table-cell">Monthly</td>
               <td className="table-cell" style={{ textAlign: "center" }}>
