@@ -77,6 +77,48 @@ export default function Investment() {
           ))}
         </tbody>
       </table>
+
+      <div className="investment-page-footer">
+        <h2>Cloud Infrastructure from Antopolis (Optional)</h2>
+
+        <div className="package-grid">
+          <div className="package-details">
+            <div>
+              <h2 className="pa">Package Details</h2>
+              <hr
+                style={{
+                  borderTop: "none",
+                  borderRight: "none",
+                  borderBottom: "1px solid #1F497D",
+                }}
+              />
+              <ul>
+                <li>Virtual Machine with weekly backups.</li>
+                <li>Database with weekly backups.</li>
+                <li>S3 Bucket for storage and content delivery.</li>
+                <li>Automated email service.</li>
+              </ul>
+            </div>
+          </div>
+          <div className="package-amount">
+            <h2>Amount</h2>
+            <hr
+              style={{
+                borderTop: "none",
+                borderRight: "none",
+                borderBottom: "1px solid #1F497D",
+              }}
+            />
+            <div className="amount-content">
+              <div>
+                <span className="currency">৳</span>
+                <span className="price">4,000/Month*</span>
+              </div>
+              <p className="note">*Monthly Prepaid</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

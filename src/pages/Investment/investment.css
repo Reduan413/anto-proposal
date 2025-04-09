@@ -1,5 +1,6 @@
 .investment-page * {
   margin: 0;
+  text-align: start;
 }
 
 .investment-page {
@@ -57,4 +58,82 @@ th {
 
 tr .item {
   font-weight: 700;
+}
+
+.investment-page-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.investment-page-footer h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.package-details {
+  border-right: 1px solid #1f497d;
+  border-bottom: 1px solid #1f497d;
+}
+.package-details h2 {
+  text-align: start;
+}
+.pa {
+  padding-left: 40px;
+}
+
+.package-amount {
+  text-align: end;
+  border-bottom: 1px solid #1f497d;
+  height: 100%;
+}
+.package-grid h2 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-right: 0.75rem;
+  color: #85dffe;
+  /* border-bottom: 1px solid #1f497d; */
+}
+
+.package-details ul {
+  list-style-type: disc;
+  padding-left: 50px;
+  text-align: start;
+}
+
+.package-details li {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgb(255 255 255);
+}
+.amount-content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: end;
+  padding-right: 0.75rem;
+  height: 80%;
+  color: rgb(255 255 255);
+  margin-top: 1rem;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 400;
+}
+.note {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgb(255 255 255);
+  color: #85dffe;
 }
