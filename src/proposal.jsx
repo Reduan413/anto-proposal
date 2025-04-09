@@ -10,6 +10,7 @@ import SuccessStories from "./pages/SuccessStories/SuccessStories";
 import OurService from "./pages/Service/OurService";
 import DedicatedMessage from "./pages/DedicatedMessage/DedicatedMessage";
 import Investment from "./pages/Investment/Investment";
+import PaymentBreakdown from "./pages/PaymentBreakdown/PaymentBreakdown";
 
 export default function Proposal() {
   const pdfRef = useRef();
@@ -123,6 +124,7 @@ export default function Proposal() {
             Proposal | <strong> Page 1</strong>
           </p>
         </div>
+        <PaymentBreakdown />
         <Investment />
         <DedicatedMessage />
         <OurService />
