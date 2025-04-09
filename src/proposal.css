@@ -185,3 +185,18 @@
   font-weight: 400;
   color: #4e95d9;
 }
+.contact_details  .detail {
+  margin: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 6px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+.contact_details  .detail svg {
+  width: 18px;
+  height: 18px;
+}
