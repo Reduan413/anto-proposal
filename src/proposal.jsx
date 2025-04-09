@@ -5,6 +5,7 @@ import "./proposal.css"; // Import the external CSS
 import ExtraordinaryImg from "../public/assets/extraordinary_img.png";
 import EndPageImg from "../public/assets/end_page_img.png";
 import { TbWorld } from "react-icons/tb";
+import { MdEmail, MdPhoneInTalk } from "react-icons/md";
 
 export default function Proposal() {
   const pdfRef = useRef();
@@ -200,7 +201,15 @@ export default function Proposal() {
           <div className="contact_details">
             <h2 className="contact_title">Please reach us at:</h2>
             <div>
-              <p><TbWorld/></p>
+              <p className="detail">
+                <TbWorld /> theantopolis.com
+              </p>
+              <p className="detail">
+                <MdEmail /> info@theantopolis.com
+              </p>
+              <p className="detail">
+                <MdPhoneInTalk /> +880–1322–447011
+              </p>
             </div>
           </div>
         </div>
