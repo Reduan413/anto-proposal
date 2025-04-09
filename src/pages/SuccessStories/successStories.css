@@ -1,0 +1,20 @@
+.success_stories {
+  /* margin-bottom: 40px; */
+  padding: 20px;
+  height: 842px;
+  width: 595px;
+  box-sizing: border-box;
+  font-family: "Rajdhani", sans-serif;
+  background-image: url("/assets/success _stories_img.png");
+  background-size: 100% 100%;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.success_stories * {
+  margin: 0;
+}

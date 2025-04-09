@@ -1,0 +1,33 @@
+.contents_table {
+    padding-top: 200px;
+  }
+  .contents_table .title {
+    font-weight: 700;
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+  }
+  .contents_details {
+    width: 400px;
+    margin: 130px auto 0 auto;
+  }
+  .contents_page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.75px solid #4f81bd;
+    padding: 16px 0;
+  }
+  .contents_page .page_title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .contents_page .page_no {
+    color: #85dffe;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
