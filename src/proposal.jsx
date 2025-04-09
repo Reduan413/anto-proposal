@@ -13,6 +13,7 @@ import Organizations from "./pages/Organizations/Organizations";
 import Roadmap from "./pages/Roadmap/Roadmap";
 import ProjectObjectives from "./pages/ProjectObjectives/ProjectObjectives";
 import ProjectObjectives2 from "./pages/ProjectObjectives/ProjectObjectives2";
+import Timeline from "./pages/Timeline/Timeline";
 
 export default function Proposal() {
   const pdfRef = useRef();
@@ -72,10 +73,11 @@ export default function Proposal() {
         <FirstPage />
         <ContentsTable />
         <Extraordinary />
-        <ProjectObjectives/>
-        <ProjectObjectives2/>
-        <Roadmap/>
-        <DedicatedMessage/>
+        <ProjectObjectives />
+        <ProjectObjectives2 />
+        <Roadmap />
+        <Timeline />
+        <DedicatedMessage />
         <OurService />
         <Organizations />
         <SuccessStories />

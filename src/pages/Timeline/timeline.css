@@ -1,0 +1,52 @@
+/* Timeline Section */
+
+.section-title {
+  color: rgb(255 255 255);
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.timeline-description {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #85dffe;
+}
+
+.highlight {
+  color: #4a9bff;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #002653;
+  padding: 20px;
+}
+
+.timeline-phase {
+  font-size: 14px;
+  color: #85dffe;
+  text-align: start;
+}
+
+.timeline-days {
+  font-size: 14px;
+  text-align: right;
+}
+
+.total {
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #002653;
+}
