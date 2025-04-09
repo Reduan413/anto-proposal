@@ -41,6 +41,45 @@
   color: #888;
 }
 
+.service-page > * {
+  margin: 0;
+  text-align: start;
+}
+
+.service-list {
+  margin-top: 2rem;
+}
 .service-item {
+  display: flex;
+  flex-direction: row;
   border-top: 1px solid #4f81bd;
+  gap: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.service-item h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #85dffe;
+}
+
+.service-item figure {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 200px;
+}
+.service-item img {
+  width: 200px;
+  height: 200px;
+  background: #000 !important;
+}
+.service-item p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #ffffff;
 }
