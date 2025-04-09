@@ -1,0 +1,138 @@
+.investment-page * {
+  margin: 0;
+  text-align: start;
+}
+
+.investment-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.investment-page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+.investment-page-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.investment-page-header p {
+  font-size: 13px;
+  line-height: normal;
+  font-weight: 400;
+  color: #85dffe;
+}
+
+.investment-table-body {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  color: white;
+}
+
+table,
+th,
+td {
+  border-bottom: 1px solid #1f497d;
+  border-collapse: collapse;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: start;
+  color: #ffffff;
+}
+
+th {
+  width: 40%;
+  font-size: 11px;
+  font-weight: 700;
+  color: #85dffe;
+}
+
+tr .item {
+  font-weight: 700;
+}
+
+.investment-page-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.investment-page-footer h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.package-details {
+  border-right: 1px solid #1f497d;
+  border-bottom: 1px solid #1f497d;
+}
+.package-details h2 {
+  text-align: start;
+}
+.pa {
+  padding-left: 40px;
+}
+
+.package-amount {
+  text-align: end;
+  border-bottom: 1px solid #1f497d;
+}
+.package-grid h2 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-right: 0.75rem;
+  color: #85dffe;
+}
+
+.package-details ul {
+  list-style-type: disc;
+  padding-left: 50px;
+  text-align: start;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.package-details li {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgb(255 255 255);
+}
+.amount-content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: end;
+  padding-right: 0.75rem;
+  color: rgb(255 255 255);
+  padding-top: 1rem;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 400;
+}
+.note {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgb(255 255 255);
+  color: #85dffe;
+}

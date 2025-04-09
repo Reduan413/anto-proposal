@@ -1,3 +1,43 @@
 .dedicated-page * {
   text-align: start;
 }
+.dedicated-page {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 35% 55%;
+  justify-items: center;
+  align-items: center;
+}
+
+.dedicated-head {
+  color: #85dffe;
+  font-weight: bold;
+  font-size: 27px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.dedicated-content {
+  display: grid;
+  grid-template-columns: 55% 35%;
+  justify-content: center;
+  align-items: center;
+  gap: 2.25rem;
+}
+
+.dedicated-content figure {
+  margin: 0;
+  width: 100%;
+  max-width: 400px;
+}
+.dedicated-content img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.dedicated-description {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+}

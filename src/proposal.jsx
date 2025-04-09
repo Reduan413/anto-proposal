@@ -7,12 +7,12 @@ import FirstPage from "./pages/FirstPage/FirstPage";
 import ContentsTable from "./pages/ContentsTable/ContentsTable";
 import Extraordinary from "./pages/Extraordinary/Extraordinary";
 import SuccessStories from "./pages/SuccessStories/SuccessStories";
-import DedicatedMessage from "./pages/DedicatedMessage/DedicatedMessage";
 import OurService from "./pages/Service/OurService";
+import DedicatedMessage from "./pages/DedicatedMessage/DedicatedMessage";
 import Organizations from "./pages/Organizations/Organizations";
+import Roadmap from "./pages/Roadmap/Roadmap";
 import ProjectObjectives from "./pages/ProjectObjectives/ProjectObjectives";
 import ProjectObjectives2 from "./pages/ProjectObjectives/ProjectObjectives2";
-import Roadmap from "./pages/Roadmap/Roadmap";
 
 export default function Proposal() {
   const pdfRef = useRef();
@@ -72,9 +72,10 @@ export default function Proposal() {
         <FirstPage />
         <ContentsTable />
         <Extraordinary />
-        <ProjectObjectives />
+        <ProjectObjectives/>
         <ProjectObjectives2/>
         <Roadmap/>
+        <DedicatedMessage/>
         <OurService />
         <Organizations />
         <SuccessStories />
