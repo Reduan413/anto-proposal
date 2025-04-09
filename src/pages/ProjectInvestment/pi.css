@@ -1,0 +1,112 @@
+.header-text {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header th {
+  color: #85dffe !important;
+  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(133, 223, 254, 0.3);
+}
+
+.table-row {
+  border-bottom: 1px solid rgba(133, 223, 254, 0.3);
+}
+
+.table-cell {
+  padding: 5px 10px;
+  font-size: 13px;
+  color: white;
+}
+
+.discount-row {
+  color: #3ff0f8;
+  font-weight: 600;
+}
+
+.invest-table td {
+  border-right: 1px solid rgba(133, 223, 254, 0.3);
+}
+.invest-table td:last-child {
+  border-right: none;
+}
+
+.referral-discount {
+  color: #3ff0f8;
+  font-weight: 600;
+}
+
+.total-row {
+  font-weight: 700;
+}
+
+.footnote {
+  color: #85dffe;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.maintenance-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.benefits {
+  text-align: start;
+}
+.benefits-title {
+  color: white;
+  margin-top: 20px;
+}
+
+.benefits-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.benefits-list li {
+  color: #85dffe;
+  display: flex;
+  font-size: 13px;
+  font-weight: 600;
+  align-items: flex-start;
+}
+
+.benefits-list li::before {
+  content: "•";
+  color: #3ff0f8;
+  margin-right: 10px;
+}
+
+.validity {
+  color: #85dffe;
+  text-align: center;
+  margin: 60px 0 20px;
+  font-weight: 700;
+}
+
+.footer {
+  text-align: center;
+  color: #4a7ebb;
+  font-size: 12px;
+  margin-top: 40px;
+}
