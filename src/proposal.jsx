@@ -6,6 +6,7 @@ import ExtraordinaryImg from "../public/assets/extraordinary_img.png";
 import EndPageImg from "../public/assets/end_page_img.png";
 import { TbWorld } from "react-icons/tb";
 import { MdEmail, MdPhoneInTalk } from "react-icons/md";
+import OurService from "./pages/Service/OurService";
 
 export default function Proposal() {
   const pdfRef = useRef();
@@ -213,6 +214,8 @@ export default function Proposal() {
             </div>
           </div>
         </div>
+
+        <OurService />
       </div>
     </div>
   );

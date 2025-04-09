@@ -7,7 +7,6 @@ function App() {
     <>
       <Proposal />
       {/* <GenerateProposalPage4 /> */}
-      <OurService />
     </>
   );
 }
