@@ -1,5 +1,6 @@
 import React from "react";
 import "./investment.css";
+import PageCounter from "../../components/PageCounter";
 
 const data = [
   {
@@ -119,6 +120,7 @@ export default function Investment() {
           </div>
         </div>
       </div>
+      <PageCounter page={"Project Investment"} number={11} />
     </div>
   );
 }
