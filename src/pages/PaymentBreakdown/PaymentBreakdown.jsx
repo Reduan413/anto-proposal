@@ -1,5 +1,6 @@
 import React from "react";
 import "./payment.css";
+import PageCounter from "../../components/PageCounter";
 
 const breakdownData = [
   {
@@ -50,6 +51,7 @@ export default function PaymentBreakdown() {
           ))}
         </div>
       </div>
+      <PageCounter page="Payment Breakdown" number={9} />
     </div>
   );
 }
