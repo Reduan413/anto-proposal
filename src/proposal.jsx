@@ -7,8 +7,8 @@ import FirstPage from "./pages/FirstPage/FirstPage";
 import ContentsTable from "./pages/ContentsTable/ContentsTable";
 import Extraordinary from "./pages/Extraordinary/Extraordinary";
 import SuccessStories from "./pages/SuccessStories/SuccessStories";
-import DedicatedMessage from "./pages/DedicatedMessage/DedicatedMessage";
 import OurService from "./pages/Service/OurService";
+import DedicatedMessage from "./pages/DedicatedMessage/DedicatedMessage";
 
 export default function Proposal() {
   const pdfRef = useRef();
@@ -159,6 +159,7 @@ export default function Proposal() {
             Proposal | <strong> Page 1</strong>
           </p>
         </div>
+        <DedicatedMessage />
         <OurService />
         <SuccessStories />
         <EndPage />
