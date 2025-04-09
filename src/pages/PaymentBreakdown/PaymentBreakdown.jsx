@@ -27,11 +27,13 @@ export default function PaymentBreakdown() {
   return (
     <div className="page">
       <div className="breakdown-container">
-        <h2>Payment Breakdown</h2>
-        <p>
-          We accept various payments in two equal installments. (50% each) under
-          the following scheme
-        </p>
+        <div className="breakdown-header">
+          <h2>Payment Breakdown</h2>
+          <p>
+            We accept various payments in two equal installments. (50% each)
+            under the following scheme
+          </p>
+        </div>
 
         <div className="payment-timeline">
           {breakdownData.map((item, index) => (
