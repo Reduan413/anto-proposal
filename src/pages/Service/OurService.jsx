@@ -1,4 +1,5 @@
-import React from "react";
+import PageCounter from "../../components/PageCounter";
+import "./service.css";
 
 const serviceData = [
   {
@@ -16,7 +17,7 @@ captivates and engages.`,
   },
   {
     id: 2,
-    title: "Service 2",
+    title: "Strategic Tech Consulting for Startups",
     img: "http://unsplash.it/300/300",
     description: `Navigating the tech landscape can be challenging, especially for
 startups aiming to make smart, impactful decisions from the
@@ -28,7 +29,7 @@ that aligns with your short-`,
   },
   {
     id: 3,
-    title: "Service 2",
+    title: "Tech Talent Offshoring",
     img: "http://unsplash.it/300/300",
     description: `Access top-tier software development resources without the
 overhead of full-time hires. With our flexible offshoring model,
@@ -40,17 +41,27 @@ HR demands, or meet the demands of project-`,
 
 export default function OurService() {
   return (
-    <div className="page">
+    <div className="page service-page">
       <h1>Our Service</h1>
 
       <div className="service-list">
         {serviceData.map((service) => (
           <div key={service.id} className="service-item">
-            <h2>{service.title}</h2>
-            <p>{service.description}</p>
+            <figure>
+              <img src={service.img} alt={service.title} />
+            </figure>
+            <div className="service-content">
+              <h2>{service.title}</h2>
+              <p>
+                {service.description.length > 300
+                  ? service.description.slice(0, 300)
+                  : service.description}
+              </p>
+            </div>
           </div>
         ))}
       </div>
+      <PageCounter page="ABOUT US" number="Page 2" />
     </div>
   );
 }

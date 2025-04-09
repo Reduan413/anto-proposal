@@ -2,12 +2,20 @@ import { useRef } from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import "./proposal.css"; // Import the external CSS
+<<<<<<< HEAD
 
 import EndPage from "./pages/EndPage/EndPage";
 import FirstPage from "./pages/FirstPage/FirstPage";
 import ContentsTable from "./pages/ContentsTable/ContentsTable";
 import Extraordinary from "./pages/Extraordinary/Extraordinary";
 import SuccessStories from "./pages/SuccessStories/SuccessStories";
+=======
+import ExtraordinaryImg from "../public/assets/extraordinary_img.png";
+import EndPageImg from "../public/assets/end_page_img.png";
+import { TbWorld } from "react-icons/tb";
+import { MdEmail, MdPhoneInTalk } from "react-icons/md";
+import OurService from "./pages/Service/OurService";
+>>>>>>> b7cbee499b362c29ce374db91a740e10b6d588c3
 
 export default function Proposal() {
   const pdfRef = useRef();
@@ -161,7 +169,36 @@ export default function Proposal() {
         {/* Success Stories Page  */}
         <SuccessStories />
         {/* End Page  */}
+<<<<<<< HEAD
         <EndPage />
+=======
+        <div className="page end_page">
+          <h3 className="title1">
+            Let's get the ball rolling and build something outstanding!
+          </h3>
+          <p className="title2">
+            We look forward to empowering your business goals and becoming a
+            partner to your success.
+          </p>
+          <img src={EndPageImg} alt="" className="end_page_img" />
+          <div className="contact_details">
+            <h2 className="contact_title">Please reach us at:</h2>
+            <div>
+              <p className="detail">
+                <TbWorld /> theantopolis.com
+              </p>
+              <p className="detail">
+                <MdEmail /> info@theantopolis.com
+              </p>
+              <p className="detail">
+                <MdPhoneInTalk /> +880–1322–447011
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <OurService />
+>>>>>>> b7cbee499b362c29ce374db91a740e10b6d588c3
       </div>
     </div>
   );
