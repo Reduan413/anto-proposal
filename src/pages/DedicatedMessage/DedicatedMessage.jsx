@@ -1,5 +1,6 @@
 import React from "react";
 import "./dedicated.css";
+import PageCounter from "../../components/PageCounter";
 
 const data = {
   img: "http://unsplash.it/300/300",
@@ -23,7 +24,7 @@ const data = {
           not only look great but also perform flawlessly.
         </p>
         <br />
-        
+
         <p>
           Alongside our app development services, we also offer strategic tech consulting for
           startups looking to navigate their journeys towards success – and to anyone else looking
@@ -50,6 +51,7 @@ export default function DedicatedMessage() {
           </div>
         </div>
       </div>
+      <PageCounter page="ABOUT US" number="Page 12" />
     </div>
   );
 }
