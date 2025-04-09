@@ -7,6 +7,7 @@ import EndPageImg from "../public/assets/end_page_img.png";
 import { TbWorld } from "react-icons/tb";
 import { MdEmail, MdPhoneInTalk } from "react-icons/md";
 import OurService from "./pages/Service/OurService";
+import DedicatedMessage from "./pages/DedicatedMessage/DedicatedMessage";
 
 export default function Proposal() {
   const pdfRef = useRef();
@@ -214,7 +215,7 @@ export default function Proposal() {
             </div>
           </div>
         </div>
-
+        <DedicatedMessage />
         <OurService />
       </div>
     </div>
