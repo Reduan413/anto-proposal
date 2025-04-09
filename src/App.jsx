@@ -1,11 +1,13 @@
 import "./App.css";
+import OurService from "./pages/Ourservice";
 import Proposal from "./proposal";
 
 function App() {
   return (
     <>
-      <Proposal/>
+      <Proposal />
       {/* <GenerateProposalPage4 /> */}
+      <OurService />
     </>
   );
 }
