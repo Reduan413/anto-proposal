@@ -61,7 +61,7 @@ export default function Investment() {
                 width: "20%",
               }}
             >
-              Firstname
+              Item
             </th>
             <th>Purpose</th>
             <th>Specification</th>
