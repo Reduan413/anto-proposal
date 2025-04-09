@@ -31,6 +31,7 @@
   font-family: "Rajdhani", sans-serif;
   padding: 5px 10px;
   border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .first-page {
@@ -185,7 +186,7 @@
   font-weight: 400;
   color: #4e95d9;
 }
-.contact_details  .detail {
+.contact_details .detail {
   margin: 0;
   display: flex;
   justify-content: start;
@@ -196,7 +197,7 @@
   font-weight: 400;
   margin-top: 16px;
 }
-.contact_details  .detail svg {
+.contact_details .detail svg {
   width: 18px;
   height: 18px;
 }

@@ -1,3 +1,4 @@
+import PageCounter from "../../components/PageCounter";
 import "./service.css";
 
 const serviceData = [
@@ -60,6 +61,7 @@ export default function OurService() {
           </div>
         ))}
       </div>
+      <PageCounter page="ABOUT US" number="Page 2" />
     </div>
   );
 }
