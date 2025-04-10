@@ -36,8 +36,8 @@ const data = {
 
 export default function DedicatedMessage() {
   return (
-    <div className="page ">
-      <div className="dedicated-page">
+    <div className="page dedicated-page">
+      <div className="">
         <div className="dedicated-head">
           <p>{data.title}</p>
         </div>

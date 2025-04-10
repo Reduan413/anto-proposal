@@ -17,6 +17,7 @@ import ProjectInvestment from "./pages/ProjectInvestment/ProjectInvestment";
 import PaymentBreakdown from "./pages/PaymentBreakdown/PaymentBreakdown";
 import Investment from "./pages/Investment/Investment";
 import Timeline from "./pages/Timeline/Timeline";
+import Roadmap2 from "./pages/Roadmap/Roadmap2";
 
 export default function Proposal() {
   const pdfRef = useRef();
@@ -79,6 +80,7 @@ export default function Proposal() {
         <ProjectObjectives />
         <ProjectObjectives2 />
         <Roadmap />
+        <Roadmap2/>
         <Timeline />
         <ProjectInvestment/>
         <PaymentBreakdown/>

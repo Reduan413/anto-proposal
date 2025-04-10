@@ -5,3 +5,51 @@
   color: #ffffff;
   margin-top: 50px;
 }
+.roadmap_cards .card1 {
+  grid-template-columns: 25% 65%;
+}
+.roadmap_cards .card2 {
+  grid-template-columns: 65% 25%;
+}
+.roadmap_cards .roadmap_card {
+  gap: 46px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.75px solid #002653;
+  padding: 24px;
+}
+.roadmap_cards .roadmap_card:last-child {
+  border-bottom: 0px;
+}
+.exploration_img {
+  width: 78px;
+}
+.analysis_img {
+  width: 115px;
+}
+.design_img,
+.programming_img {
+  width: 120px;
+}
+.testing_img {
+  width: 130px;
+}
+.roadmap_card_details h3 {
+  font-weight: 700;
+  font-size: 15.96px;
+  line-height: normal;
+  color: #85dffe;
+  text-align: start;
+}
+.roadmap_card_details p {
+  font-weight: 400;
+  font-size: 9px;
+  line-height: normal;
+  text-align: start;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.roadmap2{
+  margin-top: 20px;
+}
