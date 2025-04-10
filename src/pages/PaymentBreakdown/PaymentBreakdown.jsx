@@ -1,6 +1,7 @@
 import React from "react";
 import "./payment.css";
 import PageCounter from "../../components/PageCounter";
+import PageTopTitle from "../../components/PageTopTitle";
 
 const breakdownData = [
   {
@@ -27,6 +28,7 @@ function VrLine() {
 export default function PaymentBreakdown() {
   return (
     <div className="page">
+       <PageTopTitle title={"PROJECT  PROPOSAL"} />
       <div className="breakdown-container">
         <div className="breakdown-header">
           <h2>Payment Breakdown</h2>
@@ -51,7 +53,7 @@ export default function PaymentBreakdown() {
           ))}
         </div>
       </div>
-      <PageCounter page="Payment Breakdown" number={9} />
+      <PageCounter page="PROJECT INVESTMENT " number={10} />
     </div>
   );
 }

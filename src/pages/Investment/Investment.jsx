@@ -1,6 +1,7 @@
 import React from "react";
 import "./investment.css";
 import PageCounter from "../../components/PageCounter";
+import PageTopTitle from "../../components/PageTopTitle";
 
 const data = [
   {
@@ -40,18 +41,18 @@ const data = [
   },
 ];
 
-export default function Investment() {
+const Investment = () => {
   return (
     <div className="page">
-      <div className="investment-page">
-        <div className="investment-page-header">
-          <h2>CLIENT-SIDE REQUIREMENTS</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            deleniti vel mollitia. Tempora veniam minima excepturi magni ducimus
-            corporis illum vel sunt.
-          </p>
-        </div>
+      <PageTopTitle title={"PROJECT  PROPOSAL"} />
+
+      <div className="investment-page-header">
+        <h2>CLIENT-SIDE REQUIREMENTS</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          deleniti vel mollitia. Tempora veniam minima excepturi magni ducimus
+          corporis illum vel sunt.
+        </p>
       </div>
 
       <table className="investment-table">
@@ -123,4 +124,5 @@ export default function Investment() {
       <PageCounter page={"Project Investment"} number={11} />
     </div>
   );
-}
+};
+export default Investment;

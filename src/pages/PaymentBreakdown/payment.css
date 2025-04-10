@@ -10,7 +10,7 @@
   font-size: 28px;
   color: #ffffff;
   padding-top: 3rem;
-  text-align: start;
+  text-align: center;
   width: 100%;
   text-transform: uppercase;
 }
@@ -20,9 +20,8 @@
 }
 
 .breakdown-container p {
-  margin: 0;
+  margin: 3rem 0 0 0;
   font-size: 16px;
-  max-width: 28rem;
   color: #8de0ff;
   text-align: start;
   font-weight: 400;
