@@ -27,11 +27,11 @@
 .timeline-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 15px;
+  row-gap: 5px;
   max-width: 500px;
   margin: 0 auto;
   border: 1px solid #002653;
-  padding: 20px;
+  padding: 15px;
 }
 
 .timeline-phase {
